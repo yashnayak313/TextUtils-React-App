@@ -128,7 +128,6 @@ export default function About(props) {
           </div>
         </div>
       </div>
-      <div className="container"></div>
     </div>
   );
 }
