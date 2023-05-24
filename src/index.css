@@ -1,3 +1,7 @@
 .accordian-button::after {
     filter: invert(1);
 }
+.nav-link:hover {
+    text-decoration: solid;
+    text-decoration: underline;
+}
