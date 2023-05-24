@@ -15,6 +15,7 @@ export default function TextForm(props) {
 }
 
   const handleOnChange = (e)=> {
+   console.log(text)
     setText(e.target.value)
   }
 
@@ -52,6 +53,7 @@ export default function TextForm(props) {
   //   var reg1 = /[0-9]/;
   //   var reg2 = /\W/;
   //   var count = 0;
+  //   console.log(t.split(" "));
   //   var arr = t.split(" ");
   //   var len = t.split(" ").length;
   //   for(var i =0; i < len;i++) {

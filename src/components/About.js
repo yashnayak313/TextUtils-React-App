@@ -5,7 +5,7 @@ export default function About(props) {
     <div
       className="container"
       style={{ color: props.mode === "dark" ? "white" : "black" ,
-      backgroundColor: props.mode === "dark" ? "white" : "black"}}
+      backgroundColor: props.mode === "dark" ? "black" : "white"}}
     >
       <h1 className="my-3">About Us</h1>
       <div className="accordion" id="accordionExample">
@@ -14,7 +14,7 @@ export default function About(props) {
             <button
               className="accordion-button"
               style={{ color: props.mode === "dark" ? "white" : "black",
-              backgroundColor: props.mode === "dark" ? "white" : "black" }}
+              backgroundColor: props.mode === "dark" ? "black" : "white" }}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
@@ -33,7 +33,7 @@ export default function About(props) {
               className="accordion-body"
               style={{
                 color: props.mode === "dark" ? "white" : "black",
-                backgroundColor: props.mode === "dark" ? "white" : "black",
+                backgroundColor: props.mode === "dark" ? "black" : "white"
               }}
             >
               <strong>This is the first item's accordion body.</strong> It is
@@ -53,7 +53,7 @@ export default function About(props) {
               className="accordion-button collapsed"
               style={{
                 color: props.mode === "dark" ? "white" : "black",
-                backgroundColor: props.mode === "dark" ? "white" : "black",
+                backgroundColor: props.mode === "dark" ? "black" : "white"
               }}
               type="button"
               data-bs-toggle="collapse"
@@ -73,7 +73,7 @@ export default function About(props) {
               className="accordion-body"
               style={{
                 color: props.mode === "dark" ? "white" : "black",
-                backgroundColor: props.mode === "dark" ? "white" : "black",
+                backgroundColor: props.mode === "dark" ? "black" : "white"
               }}
             >
               <strong>This is the second item's accordion body.</strong> It is
@@ -93,7 +93,7 @@ export default function About(props) {
               className="accordion-button collapsed"
               style={{
                 color: props.mode === "dark" ? "white" : "black",
-                backgroundColor: props.mode === "dark" ? "white" : "black",
+                backgroundColor: props.mode === "dark" ? "black" : "white"
               }}
               type="button"
               data-bs-toggle="collapse"
@@ -113,7 +113,7 @@ export default function About(props) {
               className="accordion-body"
               style={{
                 color: props.mode === "dark" ? "white" : "black",
-                backgroundColor: props.mode === "dark" ? "white" : "black",
+                backgroundColor: props.mode === "dark" ? "black" : "white"
               }}
             >
               <strong>This is the third item's accordion body.</strong> It is

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-//import { BrowserRouter as Router,  Route, Routes,  } from "react-router-dom";
+import { BrowserRouter as Router,  Route, Routes,  } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import Alert from "./components/Alert";
@@ -94,7 +94,7 @@ function App() {
 
   return (
     <>
-    {/* <Router> */}
+    <Router>
       <Navbar
         title="Text Utils"
         aboutText="About us"
@@ -104,19 +104,18 @@ function App() {
         toggleMode={toggleMode}
       />
       <Alert alert={alert} />
-         {/* <Routes> */}
+         <Routes>
+            <Route exact path="/about" element={<About mode = {mode}/>} >
 
-            {/* </Route> */}
+            </Route>
 
-            {/* <Route exact path="/" element={*/}
+            <Route exact path="/" element={<TextForm heading="Enter the Text Below to Analyze" mode={mode} showAlert = {showAlert} toggleMode={toggleMode} button = {button}/>}>
 
-            {/* </Route>
-          </Routes> */}
+            </Route>
+          </Routes>
       <div className="container my-3">
-      <About mode={mode}/>
-      <TextForm heading="Enter the Text Below to Analyze" mode={mode} showAlert = {showAlert} toggleMode={toggleMode} button = {button}/>
       </div>
-      {/* </Router> */}
+      </Router>
     </>
   );
 }
