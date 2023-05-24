@@ -50,21 +50,21 @@ export default function TextForm(props) {
     setText("");
     props.showAlert("TextArea Cleared!!!","success")
   }
-  const handleWordlength = (t)=> {
-    var reg = /[a-z]/i; 
-    var reg1 = /[0-9]/;
-    var reg2 = /\W/;
-    var count = 0;
-    console.log(t.split(" "));
-    var arr = t.split(" ");
-    var len = t.split(" ").length;
-    for(var i =0; i < len;i++) {
-      if(reg.test(arr[i] ) === true | reg1.test(arr[i]) === true | reg2.test(arr[i]) === true) {
-        count++;
-      }
-    }
-    return count;
-  }
+  // const handleWordlength = (t)=> {
+  //   var reg = /[a-z]/i; 
+  //   var reg1 = /[0-9]/;
+  //   var reg2 = /\W/;
+  //   var count = 0;
+  //   console.log(t.split(" "));
+  //   var arr = t.split(" ");
+  //   var len = t.split(" ").length;
+  //   for(var i =0; i < len;i++) {
+  //     if(reg.test(arr[i] ) === true | reg1.test(arr[i]) === true | reg2.test(arr[i]) === true) {
+  //       count++;
+  //     }
+  //   }
+  //   return count;
+  // }
 
   
 
@@ -85,7 +85,7 @@ export default function TextForm(props) {
     </div>
     <div className="container my-5" style={{color: props.mode === 'dark'?'white':'black'}}>
       <h2 className="my-4">Your text Summary</h2>
-      <p>{handleWordlength(text)} words and {text.length} characters</p>
+      <p>{text.split(" ").filter((element)=> {return element.length!==0}).length} words and {text.length} characters</p>
       <p className="my-3">{0.008 * text.split(" ").length} minutes taken to read the words</p>
       <h2 className="my-5">Preview</h2>
       <p>{text.length > 0 ?text:"Enter some text in your textarea to preview it!!!"}</p>
