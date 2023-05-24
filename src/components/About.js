@@ -4,7 +4,8 @@ export default function About(props) {
   return (
     <div
       className="container"
-      style={{ color: props.mode === "dark" ? "white" : "black" }}
+      style={{ color: props.mode === "dark" ? "white" : "black" ,
+      backgroundColor: props.mode === "dark" ? "white" : "black"}}
     >
       <h1 className="my-3">About Us</h1>
       <div className="accordion" id="accordionExample">
@@ -12,7 +13,8 @@ export default function About(props) {
           <h2 className="accordion-header">
             <button
               className="accordion-button"
-              style={{ color: props.mode === "dark" ? "white" : "black" }}
+              style={{ color: props.mode === "dark" ? "white" : "black",
+              backgroundColor: props.mode === "dark" ? "white" : "black" }}
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#collapseOne"
