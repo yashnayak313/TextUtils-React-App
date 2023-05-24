@@ -9,14 +9,12 @@ export default function TextForm(props) {
   }
 
   const handleLoClick = ()=> {
-    //console.log("Handle function was clicked" + text)
     let newText = text.toLowerCase();
     setText(newText);
     props.showAlert("Converted to Lowercase !!!","success")
 }
 
   const handleOnChange = (e)=> {
-   console.log(text)
     setText(e.target.value)
   }
 
@@ -37,7 +35,6 @@ export default function TextForm(props) {
   }
 
   const handleExtraSpace = ()=> {
-   // console.log(text);
     let newText = text.split(/[  ]+/);
     let finalText = newText.join(" ") ;
 
@@ -55,7 +52,6 @@ export default function TextForm(props) {
   //   var reg1 = /[0-9]/;
   //   var reg2 = /\W/;
   //   var count = 0;
-  //   console.log(t.split(" "));
   //   var arr = t.split(" ");
   //   var len = t.split(" ").length;
   //   for(var i =0; i < len;i++) {
