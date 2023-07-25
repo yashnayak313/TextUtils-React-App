@@ -109,7 +109,7 @@ function App() {
 
             </Route>
 
-            <Route exact path="/" element={<TextForm heading="Enter the Text Below to Analyze" mode={mode} showAlert = {showAlert} toggleMode={toggleMode} button = {button}/>}>
+            <Route exact path="" element={<TextForm heading="Enter the Text Below to Analyze" mode={mode} showAlert = {showAlert} toggleMode={toggleMode} button = {button}/>}>
 
             </Route>
           </Routes>
