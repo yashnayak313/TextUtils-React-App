@@ -2,7 +2,6 @@ import React, {useState} from "react";
 
 export default function TextForm(props) {
   const handleUpClick = ()=> {
-      //console.log("Handle function was clicked" + text)
       let newText = text.toUpperCase();
       setText(newText);
       props.showAlert("Converted to Uppercase !!!","success")
@@ -15,7 +14,6 @@ export default function TextForm(props) {
 }
 
   const handleOnChange = (e)=> {
-   console.log(text)
     setText(e.target.value)
   }
 
@@ -48,21 +46,7 @@ export default function TextForm(props) {
     setText("");
     props.showAlert("TextArea Cleared!!!","success")
   }
-  // const handleWordlength = (t)=> {
-  //   var reg = /[a-z]/i; 
-  //   var reg1 = /[0-9]/;
-  //   var reg2 = /\W/;
-  //   var count = 0;
-  //   console.log(t.split(" "));
-  //   var arr = t.split(" ");
-  //   var len = t.split(" ").length;
-  //   for(var i =0; i < len;i++) {
-  //     if(reg.test(arr[i] ) === true | reg1.test(arr[i]) === true | reg2.test(arr[i]) === true) {
-  //       count++;
-  //     }
-  //   }
-  //   return count;
-  // }
+ 
 
   
 
