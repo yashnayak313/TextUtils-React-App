@@ -32,7 +32,6 @@ function App() {
   };
 
   const toggleMode = (cls) => {
-    console.log(cls);
     classRemove();
     if (cls !== "dark" && cls !== "light") {
       document.body.classList.add("bg-" + cls);
@@ -48,7 +47,6 @@ function App() {
         cls
       );
       setMode("light");
-      console.log(mode);
       setButton(cls);
       setColor("black");
       // setInterval(()=> {
